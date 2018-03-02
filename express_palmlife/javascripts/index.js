@@ -1,27 +1,19 @@
 
 (function($){
     $.noConflict();
-
-    console.log("1");
-    //轮播图 自由获取高度
-    //$('.carousel_img').height($('.carousel_imgIMg').height());
-    $(window).resize(function(){
-        $('.carousel_imgIMg').height($('.carousel_imgIMg').height());
-    });
-
-    // tab
-    console.log("2");
-    console.log($('.first_menu'));
-    $('.first_menu').hover(function(){
-        console.log("2");
-        var index = $('.first_menu').index($(this));
-        $('.head_list_back').eq(index).show().addClass("show");
-    },function(){
-        var index = $('.first_menu').index($(this));
-        $('.head_list_back').eq(index).hide().removeClass("show");
-    })
-
-
+    function rollOne(){  
+        $(".picBox").animate({marginTop:-198},0,"linear",function(){  
+            $(this).css({marginTop:0});  
+            $(this).children("li").first().remove().clone(true).appendTo(".picBox");  
+        });  
+    }  
+    var startRollOne=setInterval(rollOne,2000);  
+    $(".box").hover(function () {  
+        clearInterval(startRollOne);  
+    }, function () {  
+        startRollOne=setInterval(rollOne,2000);  //此时要是写rollone（），只能调用一次
+    });  
+    
 
 })(jQuery);
 
