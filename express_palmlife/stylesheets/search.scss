@@ -144,15 +144,11 @@ header{
   width: 100%;
   -webkit-flex: 1;
   overflow-x: hidden;
-  //overflow-y: scroll;
+  overflow-y: scroll;
   .banner{
     height:2.1rem;
     width:100%;
-<<<<<<< HEAD
-    margin-bottom:0.01rem;
-=======
     margin-bottom:0.1rem;
->>>>>>> 2018-3-3
     background:#f2f6f8;
     #iframe-wrap{
       height: 1.46rem;
@@ -163,11 +159,7 @@ header{
       overflow:hidden;
       width:100%;
       display:-webkit-flex;
-<<<<<<< HEAD
-      display:-webkit-nowrap;
-=======
       -webkit-flex-wrap:nowrap;
->>>>>>> 2018-3-3
       -webkit-justify-content: space-around;
       .l{
         width:20%;
@@ -203,11 +195,7 @@ header{
               width:100%; 
               height:0.58rem; 
               display:-webkit-flex;
-<<<<<<< HEAD
-              display:-webkit-nowrap;
-=======
               -webkit-flex-wrap:nowrap;
->>>>>>> 2018-3-3
               flex-direction: -webkit-column;
               -webkit-justify-content: space-around;
               .l{ 
@@ -252,11 +240,7 @@ header{
                 width:80%;
                 height:0.58rem;
                 display:-webkit-flex;
-<<<<<<< HEAD
-                display:-webkit-nowrap;
-=======
                 -webkit-flex-wrap:nowrap;
->>>>>>> 2018-3-3
                 -webkit-justify-content: space-around;
                 -webkit-align-items: center;
                 .r_p{
@@ -292,16 +276,6 @@ header{
    
   }
   .eq{
-<<<<<<< HEAD
-    height:2.75rem;
-    width:100%;
-    margin-bottom:0.01rem;
-    background:#f2f6f8;
-    .up{
-      margin-top:0.04rem;
-      display:-webkit-flex;
-      display:-webkit-nowrap;
-=======
     height: 1.78rem;
     width:100%;
     background:#f2f6f8;
@@ -309,7 +283,6 @@ header{
     .up{
       margin-top:0.04rem;
       display:-webkit-flex;
->>>>>>> 2018-3-3
       -webkit-justify-content: space-around;
       -webkit-align-items: center;
       height:1.25rem;
@@ -397,35 +370,6 @@ header{
     }
     .down{
       height:0.5rem;
-<<<<<<< HEAD
-      width:100%;
-      background:white;
-      li{
-        width:33.33333%;
-        float:left;
-        height:0.5rem;
-        display: -webkit-flex;
-        justify-content: center;
-        align-items:center;
-        .eq_a{
-          display:-webkit-flex;
-          display:-webkit-nowrap;
-          -webkit-justify-content:center;
-          -webkit-align-items: center;
-          width:100%;
-          height:0.5rem;
-          img{
-            width:0.19rem;
-            width:0.185rem;
-          }
-          span{
-            display:inline-block;
-            font-size:14px;
-            color:#343443;
-            margin-left:0.028rem;
-          }
-        }
-=======
       width:100%;
       background:white;
       li{
@@ -467,7 +411,6 @@ header{
       img{
         width:100%;
         height:1.055rem;
->>>>>>> 2018-3-3
       }
     }
   }
@@ -476,10 +419,7 @@ header{
     display: -webkit-flex;
     flex-wrap: wrap;
     background: white;
-<<<<<<< HEAD
-=======
     margin-bottom:0.02rem;
->>>>>>> 2018-3-3
     a{
       display:block;
       width: 20%;
@@ -487,23 +427,6 @@ header{
       text-align: center;
       box-sizing: border-box;
       display: -webkit-flex;
-<<<<<<< HEAD
-      flex-direction:-webkit-cloumn;
-      img{
-        width: 0.38rem;
-        height: 0.34rem;
-        margin:0.18rem auto 0.07rem;
-      }
-      .span1{
-        display:inline-block;
-        //text-align: center;
-        width:0.3rem;
-        height:0.3rem;
-      }
-      .c1{
-        background:url(../images/c_1.jpg) 0px 0px;
-        background-size:3.24rem;
-=======
       -webkit-flex-direction: column;
       -webkit-justify-content: flex-start;
       -webkit-align-items: center;
@@ -511,16 +434,11 @@ header{
         width: 0.38rem;
         height: 0.34rem;
         margin:0.18rem auto 0.07rem; 
->>>>>>> 2018-3-3
       }
       .span2{
         display:inline-block;
         color: #343434;
         font-size: 12px;
-<<<<<<< HEAD
-        width:0.3rem;
-        height:0.3rem;
-=======
         width:0.6rem;
         height:0.3rem;
         padding-left:0.01rem;
@@ -747,7 +665,6 @@ header{
             }
           }
         }
->>>>>>> 2018-3-3
       }
     }
   }
@@ -759,13 +676,8 @@ footer{
 	border-top:1px solid #cfcdcb;
 	display: -webkit-flex;
 	-webkit-justify-content: space-around;
-<<<<<<< HEAD
-	-webkit-align-items: center;
-	//background:url(../img/footer_bg.png) repeat-y;
-=======
   -webkit-align-items: center;
   background: white;
->>>>>>> 2018-3-3
 	background-size:3.75rem 0.01rem;
   text-align:center;
   .circle{
@@ -804,5 +716,50 @@ footer{
 }
 
 /*footer*/
-
+footer{
+    position:relative;
+    width:100%;
+      height:0.5rem;
+      border-top:1px solid #cfcdcb;
+      display: -webkit-flex;
+      -webkit-justify-content: space-around;
+    -webkit-align-items: center;
+    background: white;
+      background-size:3.75rem 0.01rem;
+    text-align:center;
+    .circle{
+      position:absolute;
+      background: white;
+      top:-0.15rem;
+      left:1.6rem;
+      width:0.4rem;
+      height:0.4rem;
+      border-radius: 50%;
+      border:1px solid #cfcdcb;
+    }
+    .special{
+      position:absolute;
+      display:block;
+      background: white;
+      bottom:0rem;
+      left:1.5rem;
+      width:0.6rem;
+    }
+    a{
+      -webkit-flex: 1;
+      color: #939393;
+      text-align: center;
+      .iconfont{
+        font-size: 30px;
+      }
+      span{
+        font-size: 10px;
+        display:block; 
+      }
+      &:hover i{
+        color: #00aaee;
+      } 
+    }
+  }
+  
 
