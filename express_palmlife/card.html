@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<title>我的</title>
+<title>金融卡</title>
 <link rel="stylesheet" href="stylesheets/card.css" type="text/css"/>
 <link rel="stylesheet" type="text/css" href="stylesheets/iconfont.css"/>
 </head>
@@ -12,15 +12,13 @@
 <header>
     <div class="header_two">
         <div class="l">
-            <i class="iconfont icon-04"></i>
-            <a class="l_a" href="#">西安</a>
+            <span><i class="iconfont icon-sousuo"></i><a class="l_a" href="#">搜索</a></span>   
         </div>
         <div class="c">
-            <p>我的</p>
+            <p>金融卡</p>
         </div>
         <div class="r">
             <div class="server">   
-                <span class="s_server same"><i class="iconfont icon-shezhi"></i><em>设置</em></span>
             </div>
             <div class="server">   
                 <span class="s_server same"><i class="iconfont icon-kefu"></i><em>客服</em></span>
@@ -33,44 +31,165 @@
 </header>
 <!-- content -->
     <div class="content">
+       <!-- cookie记录没有登陆的话 点击登录 还款 账单 -->
+       <div class="load">
+            <a class="load_refund" href="javascript:;"></a>
+            <a class="load_bill" href="javascript:;"></a>
+            <a class="load_card" href="javascript:;"></a>
+            <a class="load_loan" href="javascript:;"></a>
+            <a class="load_load" href="javascript:;"></a>
+        </div>
+        <!-- 登录状态的盒子 -->
+        <!-- <div class="load had_load"></div> -->
         <!-- 选择项目 -->
         <div class="section_one">
-            <a href="javascript:;"><img src="images/cg_7.jpg"/><span class="span2">额度信贷</span></a>
-            <a href="javascript:;"><img src="images/cg_8.jpg"/><span class="span2">积分</span></a>
-            <a href="javascript:;"><img src="images/cg_9.jpg"/><span class="span2">财富</span></a>
-            <a href="javascript:;"><img src="images/cg_10.jpg"/><span class="span2">资料管理</span></a>
-            <a href="javascript:;"><img src="images/cg_11.jpg"/><span class="span2">推荐办卡</span></a>
-            <a href="javascript:;"><img src="images/a_6.jpg"/><span class="span2">查账还款</span></a>
-            <a href="javascript:;"><img src="images/a_7.jpg"/><span class="span2">订单票卷</span></a>
-            <a href="javascript:;"><img src="images/a_8.jpg"/><span class="span2">我要借钱</span></a>
-            <a href="javascript:;"><img src="images/a_9.jpg"/><span class="span2">活动奖励</span></a>
-            <a href="javascript:;"><img src="images/a_3.jpg"/><span class="span2">安全</span></a>
-            <a href="javascript:;"><img src="images/a_1.jpg"/><span class="span2">进度查询</span></a>
-            <a href="javascript:;"><img src="images/a_2.jpg"/><span class="span2">我的</span></a>
+            <a href="javascript:;"><img src="images/card_2.jpg"/><span class="span2">信用卡还款</span></a>
+            <a href="javascript:;"><img src="images/card_3.jpg"/><span class="span2">账单分期</span></a>
+            <a href="javascript:;"><img src="images/card_4.jpg"/><span class="span2">我要借钱</span></a>
+            <a href="javascript:;"><img src="images/card_5.jpg"/><span class="span2">消费分期</span></a>
+            <a href="javascript:;"><img src="images/card_6.jpg"/><span class="span2">掌上分期</span></a>
+            <a href="javascript:;"><img src="images/card_7.jpg"/><span class="span2">理财</span></a>
+            <a href="javascript:;"><img src="images/card_8.jpg"/><span class="span2">苹果手机</span></a>
+            <a href="javascript:;"><img src="images/card_9.jpg"/><span class="span2">推荐办卡</span></a>
+            <a href="javascript:;"><img src="images/card_10.jpg"/><span class="span2">保险</span></a>
+            <a href="javascript:;"><img src="images/card_11.jpg"/><span class="span2">卡片管理</span></a>
         </div> 
-    </div>
+        <!-- 立即申请 -->
+        <div class="apply">
+            <a class="apply_for" href="javascript:;"></a>
+        </div>
+        <!-- 分期精选 -->
+        <div class="discounts">
+            <h1 class="local">分期精选</h1>
+            <a><img src="images/card_13.jpg" alt=""/></a>
+            <div class="prensent">
+                <a class="prensent_a">
+                    <span class="prensent_span"><em>家装</em><em>最高<i>30</i>万元起</em></span>
+                    <img src="images/card_14.jpg" alt=""/>
+                </a>
+                <a class="prensent_a">
+                    <span  class="prensent_span"><em>旅游</em><em>提款需要，不限次数</em></span>
+                    <img src="images/card_15.jpg" alt=""/>
+                </a>
+                <a class="prensent_a">
+                    <span  class="prensent_span"><em>全新&nbsp;<i>XC60</i></em><em>独家<i>18</i>期无息</em></span>
+                    <img src="images/card_16.jpg" alt=""/>
+                </a>                
+            </div>
+        </div>
+        <!-- 商品分期  -->
+        <div class="discounts">
+            <h1 class="local">商品分期</h1>
+            <a><img src="images/card_17.jpg" alt=""/></a>
+            <div class="prensent">
+                <a class="prensent_a">
+                    <span class="prensent_span"><em>家装</em><em>最高<i>30</i>万元起</em></span>
+                    <img src="images/card_18.jpg" alt=""/>
+                </a>
+                <a class="prensent_a">
+                    <span  class="prensent_span"><em>旅游</em><em>提款需要，不限次数</em></span>
+                    <img src="images/card_19.jpg" alt=""/>
+                </a>
+                <a class="prensent_a">
+                    <span  class="prensent_span"><em>全新&nbsp;<i>XC60</i></em><em>独家<i>18</i>期无息</em></span>
+                    <img src="images/card_20.jpg" alt=""/>
+                </a>                
+            </div>
+        </div>
+        <!-- 卡片精彩 -->
+        <div class="discounts">
+            <h1 class="local">商品分期</h1>
+            <a><img src="images/card_21.jpg" alt=""/></a>
+            <div class="prensent">
+                <a class="prensent_a">
+                    <span class="prensent_span"><em>家装</em><em>最高<i>30</i>万元起</em></span>
+                    <img src="images/card_22.jpg" alt=""/>
+                </a>
+                <a class="prensent_a">
+                    <span  class="prensent_span"><em>旅游</em><em>提款需要，不限次数</em></span>
+                    <img src="images/card_23.jpg" alt=""/>
+                </a>
+                <a class="prensent_a">
+                    <span  class="prensent_span"><em>全新&nbsp;<i>XC60</i></em><em>独家<i>18</i>期无息</em></span>
+                    <img src="images/card_24.jpg" alt=""/>
+                </a>                
+            </div>
+        </div>
+        <!-- 理财精选 -->
+        <div class="moneymatters">
+            <h1 class="local">理财精选</h1>
+            <div class="matters">
+                <a class="matters_a a1" href="javascript:;">
+                    <span class="l">
+                        <em class="l_em em1">全额宝</em>
+                        <em class="l_em em2">4.54</em>
+                        <em class="l_em em3">七年化收益率（<i>%</i>）</em>
+                    </span>
+                    <span class="r">
+                        <em class="r_em r_em1" ><img id="r_em3" src="images/card_25.jpg" alt=""/></em>
+                        <em class="r_em r_em2" id="r_em4" ><i id="r_em1">T+0</i><i id="r_em2">|&nbsp;&nbsp;支持还款&nbsp;&nbsp;|&nbsp;&nbsp;低风险</i></em>
+                    </span>
+                </a>
+                <a class="matters_a a2"  href="javascript:;">
+                    <span class="l">
+                        <em class="l_em em1">消费<i>ETM</i>连接</em>
+                        <em class="l_em em2">4.54</em>
+                        <em class="l_em em3">近一年涨跌幅（<i>%</i>）</em>
+                    </span>
+                    <span class="r">
+                        <em class="r_em r_em1" ><img id="r_em3" src="images/card_25.jpg" alt=""/></em>
+                        <em class="r_em r_em2" id="r_em4" ><i id="r_em1">T+0</i><i id="r_em2">指数型基金&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></em>
+                    </span>
+                </a>
+            </div>
+            <h1 class="local last"><a>查看全部<span>&nbsp;&nbsp;<i class="iconfont icon-youjiantou"></i></span></a></h1>
+        </div>
+
+        <!-- 保险精选 -->
+        <div class="moneymatters save">
+            <h1 class="local">保险精选</h1>
+            <div class="matters save_matters">
+                <a href="javascript:;">
+                    <span class="span1">新机碎屏险</span>
+                    <span class="span2">￥<em>79</em>起保</span>
+                    <span class="span3">最高&nbsp;&nbsp;<em>3000</em></span>
+                </a>
+                <a href="javascript:;">
+                    <span class="span1">新机碎屏险</span>
+                    <span class="span2">￥<em>79</em>起保</span>
+                    <span class="span3">最高&nbsp;&nbsp;<em>3000</em></span>
+                </a>
+                <a href="javascript:;">
+                    <span class="span1">新机碎屏险</span>
+                    <span class="span2">￥<em>79</em>起保</span>
+                    <span class="span3">最高&nbsp;&nbsp;<em>3000</em></span>
+                </a>    
+            </div>
+            <h1 class="local last"><a>查看全部<span>&nbsp;&nbsp;<i class="iconfont icon-youjiantou"></i></span></a></h1>
+        </div>
+</div>
     
 <!-- footer -->
 <footer>
-    <a href="javascript:void(0);">
+    <a href="index.html">
         <span><i class="iconfont icon-wujiaoxing"></i></span>
         <span class="commonstyle" >精选</span>
     </a>
-    <a href="javascript:void(0);">
+    <a href="search.html">
         <span><i class="iconfont icon-zhinanzhen"></i></span>
         <span class="commonstyle">发现</span>
     </a>
-    <a href="javascript:void(0);">
+    <a href="pay.html">
         <span class="circle">
             <span><i class="iconfont icon-saoma"></i></span>
         </span>
         <span class="commonstyle special">扫描 &nbsp;支付</span>
     </a>
-    <a href="javascript:void(0);">
+    <a href="card.html">
         <span><i class="iconfont icon-qiapian"></i></span>
         <span class="commonstyle">卡金融</span>
     </a>
-    <a href="javascript:void(0);">
+    <a href="my.html">
         <span><i class="iconfont icon-wode"></i></span>
         <span class="commonstyle">我的</span>
     </a>
