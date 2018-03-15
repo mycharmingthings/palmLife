@@ -1,0 +1,110 @@
+@import '_common';
+
+/*header*/
+header{
+  width:100%;
+  height:auto;
+  background:rgba(226,236,223,0.5);
+  color:black;
+  background:#f9f9f9;
+  z-index:3;
+  #select-show{
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 40px;
+    text-indent:0.2rem;
+    border-radius:0.5rem;
+    border:none;
+    border:1px solid #c9c9ce;
+  }
+  .header_two{
+    height:0.46rem;
+    width:100%;
+    display: -webkit-flex;
+    -webkit-justify-content: center; 
+    background:rgba(0,0,0,0);
+    background:#f9f9f9;
+    .l{
+      width:0.5rem;
+      height:0.46rem;
+      span{
+        width:100%;
+        height:0.46rem;
+        display:-webkit-flex;
+        -webkit-flex-direction:center;
+        -webkit-justify-content: space-around;
+        -webkit-align-items: center;
+        a{
+         width:0.5rem; 
+         background:#f9f9f9;
+         text-indent:0.1rem;
+        }
+        .l_a{
+          font-size:12px;
+          width:0.5rem;
+          height:0.3rem;
+          color:#62626f;
+          line-height:0.3rem;
+          //margin-top:0.1rem;
+          text-align:center;  
+          font-weight:700;          
+        }
+        .icon-sousuo{
+          color:#62626f;
+          margin-top:0.3rem;
+        }
+      }  
+    }
+    .c{
+      -webkit-flex:1;
+      display: -webkit-flex;
+      justify-content: center;
+      align-items:center;
+      p{
+        background:#f9f9f9;
+        font-size:16px;
+        text-indent:0.2rem;
+        //font-weight:700;
+      }
+    }
+    .r{
+      margin-left: 0.15rem;
+      width:0.5rem;
+      height:0.46rem;
+      display:-webkit-flex;
+      -webkit-flex-wrap:nowrap;
+      -webkit-justify-content: space-around;
+      -webkit-align-items: center;
+    }
+  }
+}
+/*content*/
+.content{
+  width: 100%;
+  -webkit-flex: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  &::-webkit-scrollbar{
+    display:none;
+  }
+  #select{
+    width:900%;
+    height:auto;
+    margin:0 auto;
+    background:#c9c9ce;
+    #select-list{
+      background:white;
+      li{
+        line-height: 40px;
+        font-size:18px;
+        text-indent:0.1rem;
+        border-bottom: 1px solid #ccc;
+      }
+    }
+  }
+}
+
+/*footer*/
+footer{
+      height:0rem;
+  }

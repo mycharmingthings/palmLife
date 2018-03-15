@@ -121,6 +121,9 @@ header{
   -webkit-flex: 1;
   overflow-x: hidden;
   overflow-y: scroll;
+  &::-webkit-scrollbar{
+    display:none;
+  }
   .load{
     position:relative;
     width: 100%;

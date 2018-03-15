@@ -1,0 +1,222 @@
+@import '_common';
+/*header*/
+header{
+  width:100%;
+  height:0.46rem;
+  background:rgba(226,236,223,0.5);
+  color:#555562;
+  background:#854c4c;
+  z-index:3;
+  .header_two{
+    height:0.46rem;
+    width:100%;
+    display: -webkit-flex;
+    -webkit-justify-content: center; 
+    background:rgba(0,0,0,0);
+    background:#f9f9f9;
+    border-bottom: 1px solid #a6a6a6;
+    .l{
+      width:0.5rem;
+      height:0.46rem;
+      span{
+        width:100%;
+        height:0.46rem;
+        display:-webkit-flex;
+        -webkit-flex-direction:center;
+        -webkit-justify-content: space-around;
+        -webkit-align-items: center;
+        a{
+         width:0.5rem; 
+         color:#555562;
+         text-indent:0.1rem;
+        }
+        .l_a{
+          font-size:12px;
+          width:0.5rem;
+          height:0.3rem;
+          color:#62626f;
+          line-height:0.3rem;
+          //margin-top:0.1rem;
+          text-align:center;  
+          font-weight:700;          
+        }
+        .icon-sousuo{
+          color:#555562;
+          margin-top:0.3rem;
+        }
+      }  
+    }
+    .c{
+      -webkit-flex:1;
+      display: -webkit-flex;
+      justify-content: center;
+      align-items:center;
+      p{
+        color:#555562;
+        font-size:16px;
+        text-indent:0.2rem;
+        //font-weight:700;
+      }
+    }
+    .r{
+      margin-left: 0.15rem;
+      width:0.5rem;
+      height:0.46rem;
+      display:-webkit-flex;
+      -webkit-flex-wrap:nowrap;
+      -webkit-justify-content: space-around;
+      -webkit-align-items: center;
+    }
+  }
+}
+/*content*/
+.content{
+  margin:0 auto;
+  width: 100%;
+  -webkit-flex: 1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  &::-webkit-scrollbar{
+    display:none;
+  }
+  .text{
+    width:100%;
+    height:0.725rem;
+    background:#eeeeee;
+    display:-webkit-flex;
+    -webkit-justify-content:center;
+    -webkit-align-items:center;
+    
+    .text_p{
+        width:94%;
+        line-height:0.25rem;
+        font-size:13px;
+        color:#a2a2a2;
+        span{
+            color:#eb1212;
+        }
+    }
+  }
+  .form{
+      width:100%;
+      height:3.2rem;
+      font-size:10px;
+      background:white;
+      ul{
+        .li{
+          width:100%;
+          height:0.45rem;
+          background:white;
+          text-indent:0.15rem;
+          margin-top:0.01rem;
+          line-height:0.45rem;
+          input{
+            width: 60%;
+            border: none;
+            height: .4rem;
+            color: darkgray;
+            background-color: white;
+            outline: none;
+            border-bottom: 1px solid gainsboro;
+          }
+          i{
+            font-size:18px;
+            color: grey;
+          }
+        } 
+        .phone{
+        }
+        .number{
+          display:-webkit-flex;
+          -webkit-flex-wrap:nowrap;
+          .lable{
+            padding-top: 0.02rem;
+            box-sizing:border-box;
+          }
+          .send{
+            display:inline-block;
+            padding-top: 0.02rem;
+            box-sizing:border-box;
+          }
+        }
+        .checkout{
+          display:inline-block;
+          margin:0.2rem auto;
+          width:100%;
+          color:#1fb4f2;
+          height:0.8rem;
+          padding:0 0.2rem;
+          box-sizing:border-box;
+          line-height:0.2rem;
+          position:relative;
+          .checkoutinput{
+            position:absolute;
+            left:0.15rem;;
+            width:0.2rem;
+            height:0.2rem;
+          }
+        }
+        .clicka{
+          text-align:center;
+          margin-top:0.4rem;
+            .click{ 
+                font-size:16px;
+                color:#ffffff;
+                text-align:center;
+                background: #a6daef;
+                display:inline-block;
+                width:2rem;
+                height:0.4rem;
+                border-radius: 0.4rem;
+              }
+            .quest{
+              font-size:16px;
+              color:aqua;
+              text-align:center;
+            }
+        }
+        .lable{
+            width:0.8rem;
+            height:0.45rem;
+            display:inline-block;
+            text-indent:0.08rem;
+            color: black;
+            font-size:16px;
+        }
+        .send{
+            width:1.25rem;
+            height:0.45rem;
+            color:#05adf3;
+        }
+      }
+    } 
+  }
+
+
+
+/*footer*/
+footer{
+      position:relative;
+      width:100%;
+      height:0.5rem;
+      display: -webkit-flex;
+      -webkit-justify-content: space-around;
+      -webkit-align-items: center;
+      text-align:center;
+    a{
+      -webkit-flex: 1;
+      color: #939393;
+      text-align: center;
+      margin-bottom: 0.4rem;
+      .iconfont{
+        font-size: 30px;
+      }
+      span{
+        font-size: 10px;
+        display:block; 
+      }
+      &:hover i{
+        color: #00aaee;
+      } 
+    }
+  }

@@ -78,6 +78,9 @@ header{
   overflow-x: hidden;
   overflow-y: scroll;
   background:white;
+  &::-webkit-scrollbar{
+    display:none;
+  }
   .bird{
     width:94%;
     margin:0 auto;

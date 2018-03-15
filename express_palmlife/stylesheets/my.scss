@@ -119,6 +119,9 @@ header{
   -webkit-flex: 1;
   overflow-x: hidden;
   overflow-y: scroll;
+  &::-webkit-scrollbar{
+    display:none;
+  }
   .login_register{
       width:100%;
       height:0.8rem;

@@ -136,6 +136,9 @@ header{
   #menu{
     display:-webkit-flex;
     overflow-x: scroll;  
+    &::-webkit-scrollbar{
+      display:none;
+    }
     // position:absolute;
     // top:0.45rem;
     background:white;
@@ -168,7 +171,10 @@ header{
 .content{
   -webkit-flex: 1;
   overflow-x: hidden;
-  //overflow-y: scroll;
+  overflow-y: scroll;
+  &::-webkit-scrollbar{
+    display:none;
+  }
   background:white;
   #tab{
     width:100%;

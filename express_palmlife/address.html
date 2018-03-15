@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>选择城市</title>
+<link rel="stylesheet" href="stylesheets/address.css" type="text/css"/>
+<link rel="stylesheet" type="text/css" href="stylesheets/iconfont.css"/>
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        list-style: none;
+    }
+    #select {
+        margin: 50px auto;
+        width: 200px;
+    }
+    #select-show {
+        box-sizing: border-box;
+        width: 100%;
+        line-height: 40px;
+    }
+
+</style>
+</head>
+<body>
+<!-- header -->
+<header>
+    <div class="header_two">
+        <div class="header_two">
+            <div class="l">
+                <span><a href="index.html"><i class="iconfont icon-fanhuijian1"></i></a></span>   
+            </div>
+            <div class="c">
+                <p>选择城市</p>
+            </div>
+            <div class="r">
+                <span><i class="iconfont">···</i></span> 
+            </div>
+        </div>
+    </div>
+    <input type="text" id="select-show" value="搜索" >
+</header>
+<!-- content -->
+<div class="content"> 
+    <div id="select">
+		<ul id="select-list">
+			<li>上海市</li>
+			<li>郑州市</li>
+			<li>西安市</li>
+            <li>西宁市</li>
+            <li>北京市</li>
+			<li>乌鲁木齐市</li>
+			<li>四川市</li>
+            <li>哈尔市</li>
+            <li>上海市</li>
+			<li>太原市</li>
+			<li>苏市</li>
+            <li>深圳市</li>
+            <li>佛塔市</li>
+			<li>郑州市</li>
+			<li>西安市</li>
+            <li>西宁市</li>
+            <li>上海市</li>
+			<li>郑州市</li>
+			<li>西安市</li>
+			<li>西宁市</li>
+		</ul>
+    </div>
+</div> 
+<!-- footer -->
+<footer>
+   
+</footer>
+</body>
+</html>
+<script src="javascripts/jquery-1.8.3.min.js"></script> 
+<script>
+    var oSelectShow = document.getElementById('select-show');
+    var oSelectList = document.getElementById('select-list');
+    var aLi 		= oSelectList.children;
+    oSelectShow.onfocus = function () {
+        oSelectList.style.display = 'block';
+    };
+    oSelectShow.onblur = function () {
+        setTimeout(function () {
+            // oSelectList.style.display = 'none';
+        }, 120);
+    };
+
+
+    for(var i = 0; i < aLi.length; i++) {
+        aLi[i].onclick = function () {
+            oSelectShow.value = this.innerHTML;
+        };
+    }
+</script>
